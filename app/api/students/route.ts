@@ -5,7 +5,7 @@ import User from "@/models/User"
 export async function GET() {
   try {
     await connectDB()
-    const students = await User.find({}).select("-password")
+    const students = await User.find().select("-password")
     console.log("Fetched students:", students)
 
     return NextResponse.json({ students })
