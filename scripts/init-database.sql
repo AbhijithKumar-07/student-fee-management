@@ -1,0 +1,25 @@
+-- MongoDB equivalent operations (for reference)
+-- This would be handled by Mongoose models in the actual application
+
+-- Create users collection with indexes
+-- db.users.createIndex({ "email": 1 }, { unique: true })
+
+-- Sample data insertion
+-- db.users.insertMany([
+--   {
+--     name: "John Doe",
+--     email: "john@example.com",
+--     password: "$2a$12$hashedpassword",
+--     feesPaid: false,
+--     createdAt: new Date(),
+--     updatedAt: new Date()
+--   },
+--   {
+--     name: "Jane Smith", 
+--     email: "jane@example.com",
+--     password: "$2a$12$hashedpassword",
+--     feesPaid: true,
+--     createdAt: new Date(),
+--     updatedAt: new Date()
+--   }
+-- ])
