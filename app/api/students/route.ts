@@ -1,4 +1,7 @@
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic";  
+
+// Forces dynamic behavior (no caching)
+// Do not cache this route's result. Always re-run the code when it's called.
 
 import { NextResponse } from "next/server"
 import { connectDB } from "@/lib/mongodb"
