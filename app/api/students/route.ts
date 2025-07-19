@@ -6,6 +6,7 @@ export async function GET() {
   try {
     await connectDB()
     const students = await User.find({}).select("-password")
+    console.log("Fetched students:", students)
 
     return NextResponse.json({ students })
   } catch (error) {
