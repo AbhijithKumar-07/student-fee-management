@@ -4,7 +4,7 @@ const { Server } = require("socket.io")
 const httpServer = createServer()
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://student-fee-management-1gf1.onrender.com",
     methods: ["GET", "POST"],
   },
 })
